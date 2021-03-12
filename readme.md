@@ -1,4 +1,4 @@
-![SignIn Page](https://github.com/CristianoBV/API_Nodejs/blob/main/screen/nodejs.jpg)
+
 <p align="left">
   <img alt="E-commerce" title="#E-commerce" src="https://github.com/CristianoBV/API_Nodejs/blob/main/screen/nodejs-icon.svg" width="300px">
 </p>

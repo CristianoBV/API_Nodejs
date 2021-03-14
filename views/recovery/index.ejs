@@ -1,0 +1,81 @@
+    <!DOCTYPE html>
+<html>
+
+<head>
+  <% include('../partials/header') %>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <style>
+      body {
+        background: rgb(228, 193, 238) !important;
+        width: 100vw;
+        height: 100vh;
+      }
+
+      .form-gap {
+        padding-top: 15rem;
+      }
+    </style>
+</head>
+
+<body>
+  <div class="form-gap"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 col-md-offset-3">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <div class="text-center">
+              <h3><i class="fa fa-lock fa-4x"></i></h3>
+              <h2 class="text-center">Recuperar Senha</h2>
+              <hr /> <br />
+
+              <% if(success) { %>
+                <div class="alert alter-success">
+                  <%= success %>
+                </div>
+                <% } %>
+
+                  <% if(error) { %>
+                    <div class="alert alter-danger">
+                      <%= error %>
+                    </div>
+                    <% } %>
+                      <p>Digite seu email para receber as instruções de como reiniciar a sua senha.</p>
+                      <div class="panel-body">
+
+                        <form id="register-form" role="form" autocomplete="off" class="form"
+                          action="/v1/api/usuarios/recuperar-senha" method="POST">
+
+                          <div class="form-group">
+                            <div class="input-group">
+                              <span class="input-group-addon"><i
+                                  class="glyphicon glyphicon-envelope color-blue"></i></span>
+                              <input type="email"
+                              name="email"
+                              class="form-control"
+                              placeholder="Digite seu e-mail">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <input name="recover-submit" class="btn btn-lg btn-primary btn-block" value=" Recuperar Senha"
+                              type="submit">
+                          </div>
+
+                          <input type="hidden" class="hide" name="token" id="token" value="">
+                        </form>
+
+                      </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>

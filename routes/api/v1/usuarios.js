@@ -1,21 +1,21 @@
-const router = require('express').Router();
-import auth from '../../auth.js';
-import UsuarioController from '../../../controllers/UsuarioController';
+const router = require("express").Router();
+const auth = require("../../auth");
+
+const UsuarioController = require("../../../controllers/UsuarioController");
 
 const usuarioController = new UsuarioController();
 
-router.get('/', auth.required, usuarioController.index);
-router.get('/:id', auth.required, usuarioController.show);
+router.post("/login", usuarioController.login); // testado
+router.post("/registrar", usuarioController.store); // testado
+router.put("/", auth.required, usuarioController.update); // testado
+router.delete("/", auth.required, usuarioController.remove); // testado
 
+router.get("/recuperar-senha", usuarioController.showRecovery); // testado
+router.post("/recuperar-senha", usuarioController.createRecovery); // testado
+router.get("/senha-recuperada", usuarioController.showCompleteRecovery); // testado
+router.post("/senha-recuperada", usuarioController.completeRecovery); // testado
 
-router.post('/login', usuarioController.login)
-router.post('/registrar', usuarioController.store)
-router.put('/', usuarioController.update)
-router.post('/', usuarioController.remove)
-
-router.get('/recuperar-senha', usuarioController.showRecovery);
-router.post('/recuperar-senha', usuarioController.createRecovery);
-router.get('/senha-recuperada', usuarioController.showCompleteRecovery);
-router.post('/senha-recuperada', usuarioController.completeRecovery);
+router.get("/", auth.required, usuarioController.index); // testado
+router.get("/:id", auth.required, usuarioController.show); // testado
 
 module.exports = router;

@@ -1,9 +1,7 @@
-![SignIn Page](https://github.com/CristianoBV/API_Nodejs/blob/main/screen/nodejs-icon.svg)
+
 <p align="left">
-  <img alt="E-commerce" title="#E-commerce" src="https://github.com/CristianoBV/API_Nodejs/blob/main/screen/nodejs-icon.svg" width="20px" height="20px">
+  <img alt="E-commerce" title="#E-commerce" src="https://github.com/CristianoBV/API_Nodejs/blob/main/screen/nodejs-icon.svg" width="300px">
 </p>
-
-
 # API_E-Commerce
 
 Backend Nodejs API, front-end Angular, banco MYSQL.
@@ -17,6 +15,8 @@ Backend Nodejs API, front-end Angular, banco MYSQL.
 # RESTful com Node.js, MYSQL
 
 > Projeto sendo desenvolvido para a E-commerce, Sistema de vendas com pagamento no PagSeguro.
+
+![SignIn Page](./screen/nodejs-icon.svg)
 
 
 API address in NodeJs

@@ -2,12 +2,7 @@
 <p align="left">
   <img alt="E-commerce" title="#E-commerce" src="https://github.com/CristianoBV/API_Nodejs/blob/main/screen/nodejs-icon.svg" width="300px">
 </p>
-<<<<<<< HEAD
-=======
 
-
-
->>>>>>> 7b5d1fcea3b85e7e40b5e412bd92d033231a9a29
 # API_E-Commerce
 
 Backend Nodejs API, front-end Angular, banco MYSQL.

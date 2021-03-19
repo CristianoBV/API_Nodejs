@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const uniqueValidator = mongoose.model('mongoose-unique-validator');
+const uniqueValidator = require("mongoose-unique-validator");
 
 const LojaSchema = mongoose.Schema({
   nome: { type: String, required: true},

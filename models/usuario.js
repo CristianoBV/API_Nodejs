@@ -66,7 +66,7 @@ UsuarioSchema.methods.gerarToken = function() {
 
 UsuarioSchema.methods.enviarAuthJSON = function(){
   return {
-    _id: this._id,
+    // _id: this._id,
     nome: this.nome,
     email: this.email,
     loja: this.loja,

@@ -5,7 +5,7 @@
 
 # API_E-Commerce
 
-Backend Nodejs API, front-end Angular, banco MYSQL.
+E-commerce sendo desenvolvido em Backend Nodejs API, front-end React, banco MongoDB.
 
 <h4 align="center">
  ⚡️ Desenvolvendo...
@@ -50,7 +50,7 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode][vsco
 
 ## ⚡️ Como executar o projeto (Back End)
 
-1. Back End (https://github.com/CristianoBV/API_em-NodeJs_Barber)
+1. Back End (https://github.com/CristianoBV/API_Ecommerce_NodeJs)
 
 ### Pré-requisitos
 

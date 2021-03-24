@@ -17,8 +17,6 @@ E-commerce sendo desenvolvido em Backend Nodejs API, front-end React, banco Mong
 
 > Projeto sendo desenvolvido para a E-commerce, Sistema de vendas com pagamento no PagSeguro.
 
-![SignIn Page](./screen/nodejs-icon.svg)
-
 
 API address in NodeJs
 

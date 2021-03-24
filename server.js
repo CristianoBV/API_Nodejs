@@ -23,13 +23,14 @@ const dbs = require("./config/database");
 const dbURI = isProduction ? dbs.dbProduction : dbs.dbTest;
 mongoose.connect(dbURI, {
   useNewUrlParser: true,
-  useCreateIndex: true
+  useCreateIndex: true,
+  useUnifiedTopology: true,
 });
 
 // SETUP EJS
 app.set("view engine", "ejs");
 
-// CONFIGURAÇÕES
+// CONFIGURACOES
 if(!isProduction) app.use(morgan("dev"));
 app.use(cors());
 app.disable('x-powered-by');
@@ -46,21 +47,20 @@ app.use("/", require("./routes"));
 
 // 404 - ROTA
 app.use((req, res, next) => {
-  const err = new Error("Not Found");
-  err.status = 404;
-  next(err);
+    const err = new Error("Not Found");
+    err.status = 404;
+    next(err);
 });
 
 // ROTA - 422, 500, 401
 app.use((err, req, res, next) => {
-  res.status(err.status || 500);
-  if(err.status !== 404) console.warn("Error: ", err.message, new Date());
-  res.json(err);
+    res.status(err.status || 500);
+    if(err.status !== 404) console.warn("Error: ", err.message, new Date());
+    res.json(err);
 });
 
-
-// START
+// ESCUTAR
 app.listen(PORT, (err) => {
-  if(err) throw err;
-  console.log(`⚡️ Server started on port ${PORT}!`);
-})
+    if(err) throw err;
+    console.log(`Rodando na //localhost:${PORT}`);
+});

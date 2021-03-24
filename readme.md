@@ -30,7 +30,6 @@ APPLICATION IN CRUD
 As seguintes ferramentas foram usadas na construção do projeto:
 
 - [NodeJs][nodejs]
-- [MYSQL][postgresql]
 - [MongoDB][mongodb]
 - [Eslint][eslint]
 - [Prettier][prettier]
@@ -69,11 +68,8 @@ $ cd ws
 # Instale as dependências
 $ yarn install
 
-# Instale as Migrations
-$ ❯ yarn typeorm migration:run
-
 # Use o Docker para gerar os BD
-$ Certifique que tenha o BD MYSQL instalados;
+$ Certifique que tenha o BD mongoDB instalado;
 
 # Execute a aplicação em modo de desenvolvimento
 $ yarn dev:server
